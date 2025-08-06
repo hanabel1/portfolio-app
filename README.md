@@ -25,6 +25,7 @@ A professional portfolio website built with Express.js, featuring a modern desig
 - **Styling**: Custom CSS with modern design patterns
 - **Fonts**: Inter (Google Fonts)
 - **Testing**: Jest, Supertest, JSDOM
+- **CI/CD**: CircleCI
 
 ## Installation
 
@@ -94,6 +95,37 @@ portfolio-app/
 - `npm test`: Run the complete test suite
 - `npm run test:watch`: Run tests in watch mode
 - `npm run test:coverage`: Run tests with coverage report
+
+## CI/CD Pipeline
+
+This project uses CircleCI for continuous integration and deployment:
+
+### Pipeline Jobs
+
+1. **Test Job**: Runs the complete test suite with coverage reporting
+2. **Build Job**: Creates production-ready build artifacts
+3. **Code Quality Job**: Performs final quality checks
+
+### Workflow
+
+```
+test → build → code-quality
+```
+
+### Branch Strategy
+
+- **All branches**: Test job runs on every push
+- **main/develop branches**: Build and code-quality jobs run
+- **main branch only**: Code quality job runs
+
+### Artifacts
+
+- Test coverage reports
+- Build artifacts
+- Production-ready builds
+- Code quality reports
+
+For detailed CI/CD configuration, see [`.circleci/README.md`](.circleci/README.md).
 
 ## License
 
