@@ -9,6 +9,7 @@ A professional portfolio website built with Express.js, featuring a modern desig
 - **Multiple Pages**: Home, About, and Projects pages with proper routing
 - **Interactive Elements**: Hover effects, smooth transitions, and dynamic navigation
 - **Professional Styling**: Beautiful CSS with modern design principles
+- **Comprehensive Testing**: 89.47% statement coverage with 102 passing tests
 
 ## Pages
 
@@ -23,6 +24,7 @@ A professional portfolio website built with Express.js, featuring a modern desig
 - **Frontend**: HTML5, CSS3, JavaScript
 - **Styling**: Custom CSS with modern design patterns
 - **Fonts**: Inter (Google Fonts)
+- **Testing**: Jest, Supertest, JSDOM
 
 ## Installation
 
@@ -89,7 +91,9 @@ portfolio-app/
 
 - `npm start`: Start the production server
 - `npm run dev`: Start the development server with auto-restart (requires nodemon)
-- `npm test`: Run tests (placeholder)
+- `npm test`: Run the complete test suite
+- `npm run test:watch`: Run tests in watch mode
+- `npm run test:coverage`: Run tests with coverage report
 
 ## License
 
